@@ -1,0 +1,20 @@
+{
+    "name": "zippy1981/symphony-dependency-env",
+    "description": "Demo environment variables with symphony YML config",
+    "require": {
+        "symfony/config": "^3.2",
+        "symfony/dependency-injection": "^3.2",
+        "monolog/monolog": "^1.22",
+        "symfony/yaml": "^3.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Justin Dearing",
+            "email": "zippy1981@gmail.com"
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+parameters:
+    log.file: 'php://stderr'
+    log.level: 'DEBUG'
+    # TODO: Figure out why environment variables aren't working
+    #log.file: '%env(PATH)%'
+    #log.level: '%env(LOGGING_LEVEL)%'
+services:
+    stream_handler:
+        class:     \Monolog\Handler\StreamHandler
+        arguments:
+         - '%log.file%'
+         - '%log.level%'
+    log:
+        class:     \Monolog\Logger
+        arguments: [ 'default',  ['@stream_handler']  ]
+
