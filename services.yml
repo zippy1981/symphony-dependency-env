@@ -2,7 +2,7 @@ parameters:
     log.file: 'php://stderr'
     log.level: 'DEBUG'
     # TODO: Figure out why environment variables aren't working
-    #log.file: '%env(PATH)%'
+    #log.file: '%env(APP_LOG)%'
     #log.level: '%env(LOGGING_LEVEL)%'
 services:
     stream_handler:
