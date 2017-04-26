@@ -2,10 +2,11 @@
     "name": "zippy1981/symphony-dependency-env",
     "description": "Demo environment variables with symphony YML config",
     "require": {
-        "symfony/config": "^3.2",
-        "symfony/dependency-injection": "^3.2",
+        "symfony/config": "dev-master",
+        "symfony/dependency-injection": "dev-master",
         "monolog/monolog": "^1.22",
-        "symfony/yaml": "^3.2"
+        "symfony/yaml": "dev-master",
+        "symfony/expression-language": "dev-master"
     },
     "require-dev": {
         "phpunit/phpunit": "^6.0"
